@@ -84,7 +84,7 @@ def delete_producto(id):
 def create_producto():
     #print(request.json)  # request.json contiene el json que envio el cliente
     nombre=request.json['nombre']
-    foto=foto.json['foto']
+    foto=request.json['foto']
     tipo=request.json['tipo']
     descripcion=request.json['descripcion']
     precio=request.json['precio']
@@ -102,7 +102,7 @@ def update_producto(id):
     #'nombre','foto', 'tipo', 'descripcion', 'precio', 'recomendado', 'stock'
  
     nombre=request.json['nombre']
-    foto=foto.json['foto']
+    foto=request.json['foto']
     tipo=request.json['tipo']
     descripcion=request.json['descripcion']
     precio=request.json['precio']
